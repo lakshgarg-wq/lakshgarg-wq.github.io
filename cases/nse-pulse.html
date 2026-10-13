@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indian Equity Market Trading Intelligence — Lakshay Garg</title>
+<meta name="description" content="A personal research system for Indian equities. It ingests exchange data every day, parses company documents the moment they are published, and tests trading ideas on an engine built not to flatter them.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<div class="wrap">
+<nav class="top"><a class="brand mono" href="../index.html"><b>●</b> lakshay.garg</a><span class="links"><a href="../index.html#professional">/work</a><a href="../index.html#personal">/builds</a><a href="../index.html#contact">/contact</a></span></nav>
+<main class="case"><header><div class="mono prompt">Personal · Market intelligence</div><h1>Indian equity market trading intelligence</h1><p class="lede">A personal research system for Indian equities. It ingests exchange data every day, parses company documents the moment they are published, and tests trading ideas on an engine built not to flatter them.</p></header>
+<div class="pipe"><div class=""><span>01 · system</span><b>ingest</b><p>Daily exchange reports</p></div><div class=""><span>02 · system</span><b>parse</b><p>Filings and earnings calls</p></div><div class=""><span>03 · system</span><b>signal</b><p>Conviction and risk flags</p></div><div class="h"><span>04 · human</span><b>dashboard</b><p>Critical highlights</p></div><div class=""><span>05 · system</span><b>backtest</b><p>Honest engine</p></div></div>
+<section><h2><small>01</small>A daily data pipeline</h2><p>Every trading day the system downloads the exchange's public reports (prices, delivery volumes, bulk deals, surveillance lists, margin risk and short interest), structures them and loads them into a local database. Every price load is checked before anything downstream uses it.</p></section>
+<section><h2><small>02</small>Signals, not noise</h2><p>From that data it computes a composite conviction score per stock, plus flags for unusual delivery, divergence, forced-selling risk and smart-money activity. A recurrence view shows names that keep flagging, not just today's.</p></section>
+<section><h2><small>03</small>Automated document parsing</h2><p>Company filings and earnings-call transcripts are parsed automatically as soon as they are published. Every model answers the same rubric, and quotes are checked against the source. The results feed a dashboard of critical highlights: what changed, what was promised and what looks like a red flag.</p></section>
+<section><h2><small>04</small>A deep-dive page per stock</h2><p>Each stock has its own page that scores the business and its trend separately, with a private investment journal. Theses, checkpoints and notes accumulate, so the page gets more useful every quarter.</p></section>
+<section><h2><small>05</small>Backtesting that doesn't lie</h2><p>One engine prices every test with real share counts, real cash, trading costs and taxes. Trading strategies go through multiple rounds of attacks (luck, survivorship, liquidity, execution) and a walk-forward test before any result is believed.</p></section>
+<section><h2><small>06</small>Weekly audit and improvement</h2><p>Every mistake, mine or the AI's, goes into a running log with the rule that now prevents it. The log is reviewed weekly, and recurring rules are turned into automated checks.</p></section>
+<div class="box"><h3>Built to be token-efficient</h3><ul><li>Ingestion and signals are plain code, with no model tokens.</li><li>Models are used only to read documents, and every model answers the same rubric so the answers can be compared.</li><li>One reading job was cut from ~155k to ~11k tokens per request with the same output quality.</li></ul></div>
+<div class="chips"><span class="chip">Data pipelines</span><span class="chip">Document AI</span><span class="chip">Dashboards</span><span class="chip">Backtesting</span><span class="chip">Investment research</span></div>
+<div class="next"><span><a href="grantscope.html">← GrantScope</a></span><span><a href="ledgerlens.html">Personalised Trading Monitoring & Intelligence →</a></span></div></main>
+<footer id="contact">
+  <h2>Have a revenue process that should run itself?</h2>
+  <p>Open to GTM engineering, revenue operations and strategy roles where systems and senior stakeholders meet.</p>
+  <div class="cta"><a class="btn primary" href="mailto:laksh.garg@gmail.com">laksh.garg@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/lakshay-garg-66840947">LinkedIn ↗</a></div>
+  <p class="fine mono">© 2026 Lakshay Garg</p>
+</footer>
+</div>
+</body>
+</html>

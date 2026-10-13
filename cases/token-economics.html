@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token economics — Lakshay Garg</title>
+<meta name="description" content="Agent systems are only useful if they can run daily without the bill or the limits stopping them. This is how I measure and cut what my AI systems spend.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<div class="wrap">
+<nav class="top"><a class="brand mono" href="../index.html"><b>●</b> lakshay.garg</a><span class="links"><a href="../index.html#professional">/work</a><a href="../index.html#personal">/builds</a><a href="../index.html#contact">/contact</a></span></nav>
+<main class="case"><header><div class="mono prompt">Personal · Token economics</div><h1>Token economics: making AI systems cheap enough to run every day</h1><p class="lede">Agent systems are only useful if they can run daily without the bill or the limits stopping them. This is how I measure and cut what my AI systems spend.</p></header>
+<div class="pipe"><div class=""><span>01 · system</span><b>measure</b><p>Where tokens go</p></div><div class=""><span>02 · system</span><b>diet</b><p>Cut what the model reads</p></div><div class=""><span>03 · system</span><b>route</b><p>Right model per task</p></div><div class=""><span>04 · system</span><b>tier</b><p>Cheapest reader first</p></div><div class="h"><span>05 · human</span><b>tooling</b><p>See it live</p></div></div>
+<section><h2><small>01</small>Measure first</h2><p>I studied 480 of my own AI sessions to see where the tokens actually went. A small number of very long sessions drove more than half of all usage, and fixed start-up costs were paid again on every scheduled run.</p></section>
+<section><h2><small>02</small>A token-diet playbook</h2><p>I wrote a reusable playbook: find the fixed overhead, build a golden test before changing anything, measure one real run, then pull the cheapest levers first. On one real job it cut a ~155k-token request to ~11k with the same output quality.</p></section>
+<section><h2><small>03</small>Route by tier</h2><p>Cheap models do bulk and mechanical work, and the strongest model does judgment. Every plan ends in a state a smaller model can run, so the expensive model plans once and doesn't execute.</p></section>
+<section><h2><small>04</small>Fetch, read and navigate are different jobs</h2><p>Fetching data is free code. Reading is tiered: no model, then a small local model, then the strongest model only for samples. Navigation is engineered into the system rather than left to an agent wandering the web.</p></section>
+<section><h2><small>05</small>Plain code before a model</h2><p>Scheduled jobs check in plain code whether there is anything to do before a model wakes up. Data lives in local files and ledgers, so nothing is re-read across sessions.</p></section>
+<section><h2><small>06</small>Tooling around it</h2><p>I built add-ons that show context size and cost live, hide tools a project doesn't use, enforce workflow steps, and give one view of every running session and background job.</p></section>
+<div class="chips"><span class="chip">Token economics</span><span class="chip">Cost management</span><span class="chip">Model routing</span><span class="chip">Agent operations</span></div>
+<div class="next"><span><a href="chief-of-staff.html">← AI chief of staff</a></span><span><a href="../index.html#personal">All work →</a></span></div></main>
+<footer id="contact">
+  <h2>Have a revenue process that should run itself?</h2>
+  <p>Open to GTM engineering, revenue operations and strategy roles where systems and senior stakeholders meet.</p>
+  <div class="cta"><a class="btn primary" href="mailto:laksh.garg@gmail.com">laksh.garg@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/lakshay-garg-66840947">LinkedIn ↗</a></div>
+  <p class="fine mono">© 2026 Lakshay Garg</p>
+</footer>
+</div>
+</body>
+</html>

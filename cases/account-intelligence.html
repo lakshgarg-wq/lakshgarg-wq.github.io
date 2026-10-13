@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account intelligence — Lakshay Garg</title>
+<meta name="description" content="A pipeline that turns a bare list of more than a thousand existing client accounts into sourced facts, and those facts into new upsell opportunities.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<div class="wrap">
+<nav class="top"><a class="brand mono" href="../index.html"><b>●</b> lakshay.garg</a><span class="links"><a href="../index.html#professional">/work</a><a href="../index.html#personal">/builds</a><a href="../index.html#contact">/contact</a></span></nav>
+<main class="case"><header><div class="mono prompt">Professional · Account intelligence</div><h1>Account intelligence: finding upsell in 1,000+ client accounts</h1><p class="lede">A pipeline that turns a bare list of more than a thousand existing client accounts into sourced facts, and those facts into new upsell opportunities.</p></header>
+<div class="pipe"><div class=""><span>01 · system</span><b>client list</b><p>Names only</p></div><div class=""><span>02 · system</span><b>bulk join</b><p>Public sources, fetched once</p></div><div class=""><span>03 · system</span><b>tiered reading</b><p>Cheapest reader first</p></div><div class=""><span>04 · system</span><b>sourced facts</b><p>Every fact has a source</p></div><div class="h"><span>05 · human</span><b>upsell</b><p>Opportunities routed</p></div></div>
+<section><h2><small>01</small>The problem</h2><p>The firm had more than a thousand existing client accounts and almost nothing about them beyond a name. Researching each one by hand was impossible, and running an AI agent per account would have been slow and expensive.</p></section>
+<section><h2><small>02</small>Fetch once, filter many</h2><p>Instead of looking up a thousand companies one at a time, the pipeline downloads large public sources once and filters them by the client list. Work that would take a thousand lookups becomes one join.</p></section>
+<section><h2><small>03</small>Gates before cost</h2><p>A cheap pass runs on every account. Only the accounts that survive it get the expensive fields, so effort goes where an opportunity is plausible.</p></section>
+<section><h2><small>04</small>Tiered reading</h2><p>Most facts are read with no model at all, from structured data on the page. Where reading is needed, a small local model works on pre-trimmed text. The strongest model only checks samples and triages failures. It never reads the full volume.</p></section>
+<section><h2><small>05</small>Provenance on every fact</h2><p>Each extracted fact carries its source, the date it was retrieved and whether it was stated or inferred. Because these packets travel to account owners, nothing unlabeled is allowed through.</p></section>
+<section><h2><small>06</small>From facts to pipeline</h2><p>The output is a table of facts per account that maps each client to the services they don't buy yet. It becomes a ranked pipeline of upsell opportunities, routed to the people who own those relationships.</p></section>
+<div class="box"><h3>Built to be token-efficient</h3><ul><li>Fetching, reading and navigating are three separate jobs. Fetching is free code, reading is tiered, and navigation is built into the URLs rather than left to an agent loop.</li><li>The default reader costs nothing to run. Paid models are the exception, not the path.</li></ul></div>
+<div class="chips"><span class="chip">Account intelligence</span><span class="chip">Cross-sell / upsell</span><span class="chip">Data enrichment</span><span class="chip">Pipeline design</span><span class="chip">Token economics</span></div>
+<div class="next"><span><a href="sentinel.html">← Sentinel</a></span><span><a href="outbound.html">Outbound orchestration →</a></span></div></main>
+<footer id="contact">
+  <h2>Have a revenue process that should run itself?</h2>
+  <p>Open to GTM engineering, revenue operations and strategy roles where systems and senior stakeholders meet.</p>
+  <div class="cta"><a class="btn primary" href="mailto:laksh.garg@gmail.com">laksh.garg@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/lakshay-garg-66840947">LinkedIn ↗</a></div>
+  <p class="fine mono">© 2026 Lakshay Garg</p>
+</footer>
+</div>
+</body>
+</html>
