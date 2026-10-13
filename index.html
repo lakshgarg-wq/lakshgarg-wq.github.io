@@ -44,19 +44,27 @@
   <div class="sec-head"><span class="mono">Selected work</span><h2>Organised by the GTM problem it solves</h2></div>
 
   <article class="work">
-    <div class="meta mono">Intent-based prospecting · Lead scoring</div>
-    <h3>Signal platform for a services firm</h3>
-    <p>Ten trackers (regulatory filings, public tenders, M&amp;A and IPO news, stock-exchange disclosures) merged into one scored list of accounts across the UAE, Europe, the US and India. Each account comes with a <em>why now</em> attached, including a dated clock of compliance deadlines.</p>
-    <p class="out"><b>Outcome:</b> a refreshable, ranked target list. It also showed that under half of the list was reachable in the core market, which moved where effort went.</p>
-    <a class="more" href="cases/bd-engine.html">Case study →</a>
+    <div class="meta mono">Agent orchestration · Lead scoring · Personalised outreach</div>
+    <h3>Agent-orchestrated outbound</h3>
+    <p>A daily system that admits only accounts with a real reason to buy, ranks them, has agents research each one and draft a message, and gates every draft before it reaches me. I approve every send, and what I send feeds back into how the next drafts are written.</p>
+    <p class="out"><b>Outcome:</b> a repeatable daily outbound loop, where agents do the work and a human owns the judgment.</p>
+    <a class="more" href="cases/outbound.html">Case study →</a>
   </article>
 
   <article class="work">
-    <div class="meta mono">Personalised outreach at scale · Human in the loop</div>
-    <h3>AI research-and-draft engine with quality gates</h3>
-    <p>For each account, sub-agents research the company, pick the best-fit service line and draft a first message. Before anything reaches me, every claim is checked against published proof, the CRM and the person's profile. A missing step stops the run.</p>
-    <p class="out"><b>Outcome:</b> LinkedIn acceptance more than doubled after six weeks of testing message styles, and an inflated proof point was caught before it reached a prospect.</p>
-    <a class="more" href="cases/bd-engine.html">Case study →</a>
+    <div class="meta mono">Intent data · Signal intelligence</div>
+    <h3>Sentinel: a central intelligence layer</h3>
+    <p>Many independent market trackers merged into one view of which accounts are worth approaching now. One design runs across four geographies: the EU, the GCC, India and the US.</p>
+    <p class="out"><b>Outcome:</b> one architecture producing a ranked daily brief for each market, feeding the outbound engine.</p>
+    <a class="more" href="cases/sentinel.html">Case study →</a>
+  </article>
+
+  <article class="work">
+    <div class="meta mono">Context engineering · AI memory</div>
+    <h3>An AI chief of staff that knows how I work</h3>
+    <p>A system that learns from my own work history and packages it into a portable profile, so any AI model can work like a chief of staff from the first message.</p>
+    <p class="out"><b>Outcome:</b> new AI sessions start from context instead of from zero.</p>
+    <a class="more" href="cases/chief-of-staff.html">Case study →</a>
   </article>
 
   <article class="work">
@@ -81,6 +89,16 @@
     <p class="out"><b>Outcome:</b> I withdrew my own inflated early results. That habit is the one I bring to pipeline metrics.</p>
     <a class="more" href="cases/backtesting.html">Case study →</a>
   </article>
+</section>
+
+<section id="tokens">
+  <div class="sec-head"><span class="mono">Token economics</span><h2>Making AI systems cheap enough to run every day</h2></div>
+  <div class="grid">
+    <div><h4>Measure first</h4><p>I studied 480 of my own AI sessions to see where the tokens went. A handful of very long sessions turned out to drive most of the cost.</p></div>
+    <div><h4>Cut what the model reads</h4><p>I wrote a reusable token-diet playbook. On one real job it cut a ~155k-token request to ~11k, with the same output quality.</p></div>
+    <div><h4>Route by tier</h4><p>Cheap models do bulk work and the strongest model does judgment. Every plan ends in a state a smaller model can run.</p></div>
+    <div><h4>Tooling around it</h4><p>I built add-ons that show context size live, hide unused tools, enforce workflow steps and track every running session.</p></div>
+  </div>
 </section>
 
 <section id="approach">
