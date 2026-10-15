@@ -27,8 +27,8 @@ def head(title, desc, root, og=None, path=""):
 
 def foot():
     return f'''<footer id="contact">
-  <h2>Have a revenue process that should run itself?</h2>
-  <p>Open to GTM engineering, revenue operations and strategy roles where systems and senior stakeholders meet.</p>
+  <h2>Want AI to take work off your desk?</h2>
+  <p>I help founders set up AI in their business. First I look at how you work. Then I build the tools that save you time.</p>
   <div class="cta"><a class="btn primary" href="mailto:{MAIL}">{MAIL}</a><a class="btn" href="{LI}">LinkedIn ↗</a></div>
   <p class="fine mono">© 2026 Lakshay Garg</p>
 </footer>
@@ -202,11 +202,11 @@ def cards(slugs):
         f'<a class="card" href="cases/{s}.html"><div class="k">{CASES[s][0].split("· ")[1]}</div><h3>{NAMES[s] if s != "chief-of-staff" else "AI chief of staff"}</h3><p>{CARD[s]}</p><span class="go">read case →</span></a>'
         for s in slugs) + '</div>'
 
-idx = head("Lakshay Garg — GTM Engineer", "Process systems engineer building agentic GTM systems: signal intelligence, account research and outreach pipelines, with a person accountable for every send.", "", "home")
+idx = head("Lakshay Garg — AI for founders", "I help founders set up AI in their business. First I look at how you work. Then I build the tools that save you time.", "", "home")
 idx += f'''<header class="hero">
-  <div class="mono prompt">$ whoami → process systems engineer · GTM engineer</div>
-  <h1>I engineer <em>revenue systems</em> the way plants are engineered: inputs, controls and feedback loops.</h1>
-  <p class="lede">Chemical engineer by training. I've spent 12+ years in the offices of CEOs and ministers turning strategy into systems that organisations run. Today I build agentic GTM systems: signal intelligence, account research and outreach pipelines, with a person accountable for every send.</p>
+  <div class="mono prompt">$ whoami → founder · engineer · AI builder</div>
+  <h1>I help founders set up <em>AI that saves them time</em>.</h1>
+  <p class="lede">I founded and ran a chemicals business, then worked in the offices of CEOs and ministers. Now I build AI tools for founders. I start with how you work, then build what saves you time. You keep the decisions.</p>
   <div class="cta"><a class="btn primary" href="#professional">see the work</a><a class="btn" href="{LI}">LinkedIn ↗</a><a class="btn" href="mailto:{MAIL}">email</a></div>
   <div class="path">
     <div><span>2012</span><b>Process engineering</b></div>
@@ -214,7 +214,7 @@ idx += f'''<header class="hero">
     <div><span>2018</span><b>M&amp;A and IPO advisory, Berlin</b></div>
     <div><span>2021</span><b>Minister's office, Govt. of India</b></div>
     <div><span>2022</span><b>Chief of Staff, Global CEO office</b></div>
-    <div class="now"><span>Now</span><b>Agentic GTM systems, EU + UAE</b></div>
+    <div class="now"><span>Now</span><b>AI tools for founders</b></div>
   </div>
 </header>
 
